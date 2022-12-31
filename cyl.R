@@ -10,5 +10,7 @@ data <- mtcars %>%
 # Additional lines of code
 data %>% 
   ggplot(aes(x = cyl, y = total)) + 
-  geom_col(fill = "blue") + 
+  geom_col(fill = "blue") +
+  geom_point(size = 3) +
   theme_bw()
+
